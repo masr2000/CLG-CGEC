@@ -32,7 +32,7 @@ class ImproperLogicality(Augmentor):
             select_word = random.choice(replace_words)
             trigger_word = search.group(1)
             start, end = search.span()
-            return text[:start] + select_word + text[start + len(select_word):]
+            return text[:start] + select_word + text[start + len(trigger_word):]
         return None
 
     def _replace_coordinate(self, sent: list) -> Optional[str]:
