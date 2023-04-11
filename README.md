@@ -11,7 +11,7 @@
 1. 提出了基于中文语法规则的CGEC数据生成方法CLG，该方法可以依据不同类型语法错误的语法规则将语法正确的句子转化为含有不同类型错误的句子。
 2. 构建了一个具有挑战性的CGEC评测数据集NaCGEC，该数据集的语料来源于中文母语者，更接近中文母语者日常写作中会犯的语法错误。
 
-**本仓库包含了我们提出的CGEC数据生成方法CLG的代码实现，而本文构建的测试数据集NaCGEC预期将于近期依托学术会议举办相关比赛，因此测试数据将在比赛时放出。**
+**本仓库包含了我们提出的CGEC数据生成方法CLG的代码实现，而本文构建的测试数据集NaCGEC预期将于近期依托学术会议举办相关比赛，因此测试数据将在比赛中放出，比赛报名链接[NLPCC 2023 Shared Task 1: Chinese Grammatical Error Correction](http://tcci.ccf.org.cn/conference/2023/taskdata.php)，相关比赛参与指南guideline请参见我们创建的单独仓库[NaCGEC](https://github.com/masr2000/NaCGEC)。**
 
 另外，论文实验中使用的CGEC模型实现请参考[MuCGEC](https://github.com/HillZhang1999/MuCGEC)。
 
