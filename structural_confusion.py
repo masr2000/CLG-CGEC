@@ -55,7 +55,10 @@ class StructuralConfusion(Augmentor):
                 start, end = search.span()
                 if index1 == 0:
                     end2 = end - 1 if text[end - 1] in delimiters else end
-                    return f"{text[:end - len(pattern1[1])]}{pattern2[1]}{text[end2:]}"
+                    if pattern1[1] == f"[{delimiters}]":
+                        return f"{text[:end2]}{pattern2[1]}{text[end2:]}"
+                    else:
+                        return f"{text[:end - len(pattern1[1])]}{pattern2[1]}{text[end2:]}"
                 else:
                     start2 = start + 1 if text[start] in delimiters else start
                     return f"{text[:start2]}{pattern2[0]}{text[start + len(pattern1[0]):]}"
